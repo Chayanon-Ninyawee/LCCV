@@ -228,7 +228,7 @@ struct FrameInfo
 
 		auto ae = ctrls.get(libcamera::controls::AeState);
 		if (ae)
-			aelock = (*ae == libcamera::controls::AeStateLocked);
+			aelock = (*ae == libcamera::controls::AeStateSearching);
 	}
 
 	std::string ToString(std::string &info_string) const
